@@ -1,0 +1,306 @@
+html, body {
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 2000px 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 375px;
+  height: 1100px;
+}
+
+.Title {
+  background-image: url("../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.Title h1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 0.75rem;
+}
+.Title p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+  margin: 0rem 5rem;
+}
+
+.component {
+  background-color: hsl(230deg, 100%, 99%);
+  display: flex;
+  border-radius: 20px;
+  margin-top: 3rem;
+  padding: 0;
+}
+.component p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+  letter-spacing: 2px;
+  margin-top: 3rem;
+  margin-left: 7rem;
+}
+.component .slide {
+  -webkit-appearance: none;
+  width: 320px;
+  margin-left: 1.5rem;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, hsl(224deg, 65%, 95%) 35%, hsl(224deg, 65%, 95%) 10%);
+  height: 12px;
+  margin-top: 2rem;
+}
+.component .slide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(174deg, 86%, 45%);
+  background-position: center;
+  cursor: pointer;
+}
+.component .slide::-webkit-slider-thumb:hover {
+  box-shadow: 0px 1px 10px 1px hsl(174deg, 86%, 45%);
+}
+.component .slide::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(174deg, 86%, 45%);
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px 1px hsl(174deg, 86%, 45%);
+}
+.component .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.component .price h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 0.75rem;
+  margin-left: 0;
+}
+.component .price p {
+  margin-left: 5px;
+}
+
+.billing {
+  display: flex;
+  padding: 2rem;
+  /* Hide default HTML checkbox */
+  /* The slider */
+}
+.billing h3 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+  margin-left: 0.25rem;
+}
+.billing .switch {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.billing .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.billing .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  left: 0;
+  right: 0;
+  bottom: -18px;
+  background-color: hsl(223deg, 50%, 87%);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.billing .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.billing input:checked + .slider {
+  background-color: hsl(174deg, 77%, 80%);
+}
+.billing input:focus + .slider {
+  box-shadow: 0 0 1px hsl(174deg, 86%, 45%);
+}
+.billing input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.billing h4 {
+  background-color: hsl(14deg, 92%, 95%);
+  border-radius: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: hsl(15deg, 100%, 70%);
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0px;
+}
+
+hr {
+  background-color: hsl(224deg, 65%, 95%);
+  border: none;
+  height: 2px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bottom ul {
+  list-style: url(../images/icon-check.svg);
+}
+.bottom ul li {
+  margin-top: 1rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+}
+.bottom .Start {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(225deg, 20%, 60%);
+  border: none;
+  border-radius: 25px;
+  padding: 15px 60px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: hsl(227deg, 35%, 25%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 650px;
+    flex-wrap: wrap;
+  }
+  .desk-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 650px;
+    height: auto;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+  }
+  .desk-up p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+  .desk-up .price {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .desk-up .slide {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 550px;
+  }
+  .billing {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+    /* Hide default HTML checkbox */
+    /* The slider */
+  }
+  .billing .switch {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  .billing .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .billing .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-color: hsl(223deg, 50%, 87%);
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  .billing .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  .billing input:checked + .slider {
+    background-color: hsl(174deg, 77%, 80%);
+  }
+  .billing input:focus + .slider {
+    box-shadow: 0 0 1px hsl(174deg, 86%, 45%);
+  }
+  .billing input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  .bottom {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
